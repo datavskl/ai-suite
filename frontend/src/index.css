@@ -1,0 +1,75 @@
+/* index.css */
+
+body {
+    margin: 0; /* Reset body margin - important for layout control */
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden; /* Prevent horizontal scrollbar if content overflows */
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+      monospace;
+}
+
+.error {
+    color: red;
+}
+
+.draft-preview {
+    margin-top: 10px;
+    white-space: pre-line;
+}
+
+.draft-editor textarea {
+    width: 100%;
+    font-family: monospace;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.send-status.success {
+    color: green;
+    margin-top: 10px;
+}
+
+.send-status.error {
+    color: red;
+    margin-top: 10px;
+}
+
+/* Mailboxes Page Styling */
+.mailboxes-page {
+    margin-top: 20px;
+}
+
+.mailboxes-page h2 {
+    margin-bottom: 15px;
+}
+
+/* Email List Page Styling */
+.email-list-page {
+    margin-top: 20px;
+}
+
+.email-list-page h4 {
+    margin-bottom: 15px;
+}
+
+/* Sent Emails Page Styling */
+.sent-emails-page {
+    margin-top: 20px;
+}
+
+.sent-emails-page h2 {
+    margin-bottom: 15px;
+}
+
+/* App Layout Styling */
+.App {
+    display: flex; /* Enable flexbox layout for App container */
+}

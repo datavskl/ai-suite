@@ -1,0 +1,31 @@
+sales-automation-app/
+├── backend/
+│   ├── server.js
+│   ├── gemini-service.js
+│   ├── db.js
+│   ├── models/
+│   │   ├── lead.js
+│   │   ├── template.js
+│   │   ├── email.js
+│   │   └── mailbox.js
+│   ├── package.json
+│   └── node_modules/
+├── frontend/
+│   ├── src/
+│   │   ├── components/
+│   │   │   ├── EmailDraftingForm.js
+│   │   │   ├── EmailDraftPreview.js
+│   │   │   ├── LeadListPage.js
+│   │   │   ├── SentEmailsPage.js
+│   │   │   ├── MailboxList.js
+│   │   │   ├── EmailFolderList.js
+│   │   │   └── EmailList.js
+│   │   ├── App.js
+│   │   ├── index.js
+│   │   └── index.css
+│   ├── public/
+│   │   └── index.html
+│   ├── package.json
+│   └── node_modules/
+├── package.json        (Optional - root package.json for managing both)
+└── README.md
