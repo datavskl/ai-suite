@@ -13,6 +13,15 @@ const mailboxService = {
             throw error;
         }
     },
+    createMailbox: async (mailboxData) => { // New function to create mailbox
+        try {
+            const response = await axios.post(`${API_BASE_URL}/mailboxes`, mailboxData);
+            return response;
+        } catch (error) {
+            console.error("Error creating mailbox:", error);
+            throw error;
+        }
+    },
     // ... other mailbox related API calls ...
 };
 
