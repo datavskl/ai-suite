@@ -13,7 +13,27 @@ const mailboxService = {
             throw error;
         }
     },
-    // ... other mailbox related API calls ...
+
+    createMailbox: async (mailboxData) => { // New createMailbox function
+        try {
+            const response = await axios.post(`${API_BASE_URL}/mailboxes`, mailboxData);
+            return response; // Return the full response object
+        } catch (error) {
+            console.error("Error creating mailbox:", error);
+            throw error;
+        }
+    },
+
+    updateMailbox: async (mailboxId, mailboxData) => { // New updateMailbox function
+        try {
+            const response = await axios.put(`${API_BASE_URL}/mailboxes/${mailboxId}`, mailboxData);
+            return response; // Return the full response object
+        } catch (error) {
+            console.error("Error updating mailbox:", error);
+            throw error;
+        }
+    },
+    // ... (rest of mailboxService - if any) ...
 };
 
 export default mailboxService;
